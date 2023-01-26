@@ -26,8 +26,7 @@ myfont = pygame.font.SysFont('ariel', 75)
 def draw_window(board):
     for r in range(1, ROWS+1):
         for c in range(COLUMNS):
-            pygame.draw.rect(WINDOW, BLUE, (c*SQUARESIZE, r *
-                             SQUARESIZE, SQUARESIZE, SQUARESIZE))
+            pygame.draw.rect(WINDOW, BLUE, (c*SQUARESIZE, r * SQUARESIZE, SQUARESIZE, SQUARESIZE))
             if board[r-1][c] == 0:
                 pygame.draw.circle(
                     WINDOW, BLACK, (c*SQUARESIZE + int(SQUARESIZE/2), r*SQUARESIZE + int(SQUARESIZE/2)), RADIUS)
